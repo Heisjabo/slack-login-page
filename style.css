@@ -14,7 +14,7 @@ body {
     width: 100%;
     justify-content: center;
 }
-.container img{
+.container #illustration{
     width: 60%;
     max-height: 100vh;
 }
@@ -124,10 +124,11 @@ input[type="checkbox"]{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    width: 100%;
 }
 form button{
     display: flex;
-    width: 420px;
+    width: 100%;
     padding: 13px 10px 12px 10px;
     border: none;
     justify-content: center;
@@ -146,30 +147,31 @@ a{
     font-style: normal;
     font-weight: 600;
 }
-
 @media (max-width: 480px) {
     .container {
-        /* display: flex;
-        align-items: center;
-        justify-content: center; */
-        width: 80%;
-        /* margin: 0 auto; */
-        margin-top: 15%;
-        margin-left: 24px;
-        /* background-color: red; */
+        width: 100%;
     }
-    .container img{
+    .intro h1{
+        font-size: 24px;
+    }
+    .container #illustration{
         display: none;
     }
     .form-field{
         padding: 0 20px;
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
     }
-    .form-field .intro{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px 0;
+    form .input-field input{
+        width: 100%;
+    }
+    .intro button{
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .container #illustration{
+        display: none;
     }
 }
